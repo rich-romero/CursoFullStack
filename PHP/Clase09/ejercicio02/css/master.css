@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../images/bg-body.png);
+}
+header{
+  padding: 1%;
+
+}
+.title{
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+.form{
+  padding: 1%;
+  display: block;
+  font-size:
+}
