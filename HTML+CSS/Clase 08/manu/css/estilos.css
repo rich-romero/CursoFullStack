@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+ background-image: url(../images/bg-body.png);
+}
+
+.container{
+  border: 1px solid rgba(0,0,0,0.5);
+  margin: 10px 20px;
+  display:inline-flex;
+  flex-wrap: wrap;
+
+}
+
+.card{
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 10px;
+  width: 48%;
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.card-image {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 50%;
+
+}
+
+
+.social-media {
+  display:flex;
+  flex-direction: row;
+  margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    list-style:none;
+    justify-content: space-between;
+}
+
+.social-media li {
+
+}
+.social-media li a {
+
+
+  display: block;
+border-radius: 50%;
+padding: 4px;
+background-color: blue;
+color: white;
+width: 25px;
+height: 25px;
+text-align: center;
+}
+
+.ion-social-facebook, .ion-social-twitter, .ion-social-linkedin{
+  margin: auto;
+}
+
+.card-data {
+ width: 66%;
+}
+
+.card-data h2 {
+  display: block;
+    font-size: 1.75em;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.8em;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.card-data p {
+  font-size: 0.95em;
+line-height: 1.5em;
+font-weight: normal;
+}
+
+.card-data a {
+  display: block;
+  text-decoration: none;
+  padding: 7px;
+  background-color: lightgrey;
+  color: white;
+  width: 86px;
+  height: 34px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/*---------------MOBILE LAST-----------------------*/
+
+@media (max-width:700px) {
+  .card{
+    flex-direction: column;
+    width: 48%;
+  }
+  .card-image{
+    width: auto;
+  }
+  .card-data {
+    width: auto;
+  }
+}
+
+@media (max-width:375px) {
+  .container{
+  flex-direction: column;
+  }
+  .card{
+    width: auto;
+  }
+}

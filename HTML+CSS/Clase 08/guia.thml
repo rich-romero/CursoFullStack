@@ -1,0 +1,44 @@
+flexbox\\
+
+flex
+inline flexbox
+
+lo primero que hay que hacer es que e
+
+wrap aprieta los objetos (por defecto)
+no-wrap mantiene el ancho de los bejtos
+wrap hace que si los hijos no entran en el ancho de la linea los manda para abajo
+wrap reverse hace orden de lectura inversa
+
+podemos crear filas y columnas
+direction: row, alinea en fila de izq a derecha
+directon: row-reverse, alinea de derecha a izq
+
+direction: column ordena de arriba para abajo
+direction: columnreverse  ordena de abajo para arriba
+
+justify content: flex-start empieza de izq a derecha por el inicio
+justify content: flex-end empieza de de derecha a izq por el final
+
+justify contente: center
+justify content: space between
+justify content: space around pone el mismo espacio alrededor de todos los objetos
+
+cross axis
+strecth estira los elementos verticalmente (por defecto)
+align items: flex start el eje empieza arriba
+align items: flex end el eje empieza abajo
+
+align items base line
+
+order walt
+
+flexgrow
+el item calcula el espacio libre y hace que se ocupe el maximo del espacio
+pipe flex grow 1 ocupa el maximo del espacio
+
+align self walt, alifn self flex start dice como se tiene que alinear dentro de la caja
+con flex end se alinea para abajo
+con center se alinea al medio
+
+main axis dispone el ancho minimo que tiene que ocupar la caja

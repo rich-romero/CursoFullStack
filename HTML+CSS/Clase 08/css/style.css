@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  line-height: normal;
+}
+
+body{
+  background-image: url(../images/bg-body.png);
+  margin: 10px 20px;
+}
+
+/*---------------CAJA-----------------------*/
+
+.container {
+  background-color: rgba(0, 0, 0, 0.01);
+  border: 2px rgb(200, 200, 200) solid;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/*---------------CARTAS-----------------------*/
+
+.card{
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  width: 46.5%;
+}
+
+/*---------------FOTO-----------------------*/
+
+.card-image {
+  flex-direction: column;
+  justify-content:flex-start;
+  display: flex;
+  margin: 10px;
+}
+
+.card-image img{
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.social-media{
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+  padding-inline-start: 0px;
+  margin:0px;
+  padding-top: 10px;
+}
+
+.social-media li{
+  background-color: #508fb8;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+
+.social-media li a{
+  color: white;
+}
+
+/*---------------TEXTO-----------------------*/
+
+.card-data{
+  flex-direction: column;
+  margin: 10px;
+  justify-content: space-between;
+  font-size: 0.9em;
+    width: auto;
+}
+
+.card-data h2{
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  display: inline-flex;
+}
+
+.card-data p{
+  font-size: 0.9em;
+  display: inline-flex;
+}
+
+.card-data a{
+  background-color: rgb(200,200,200);
+  color: #c7c7c7;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  text-align: left;
+  display: inline-flex;
+}
+
+/*---------------MOBILE LAST-----------------------*/
+
+@media (max-width:700px) {
+.card{
+  flex-direction: column;
+  width: 42.5%;
+}
+
+}
+
+/*---------------XS-----------------------*/
+
+@media (max-width:375px) {
+.card{
+  flex-direction: column;
+  width: auto;
+}
+
+}
